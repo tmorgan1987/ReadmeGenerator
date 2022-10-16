@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const MarkDown = require('./utils/generateMarkdown')
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -49,7 +50,18 @@ const questions = [
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
+function runQuestions() {
+	return inquirer.prompt(questions)
+	.then((answers) => {
+		console.log(answers)
+		return answers
+	})
+	.catch((error) => {
+	console.log(error)
+	})
+}
+
 function init() {}
 
 // Function call to initialize app
-init();
+runQuestions();
