@@ -16,30 +16,29 @@
 class MarkDown {
 	static generateReadme(answers){
   return `
-	# ${answers.title}
+# ${answers.title}
+## Table of Contents
+- [Project Descrition](#Description)
+- [Install/Usage](#Installation)
+- [Contributions](#Contributions)
+- [Questions](#Questions)
+- [License](#License)
 
-	## Table of Contents
-	- [Project Descrition](#Description)
-	- [Install/Usage](#Installation)
-	- [Contributions](#Contributions)
-	- [Questions](#Questions)
-	- [License](#License)
+## Description
+${answers.description}
 
-	## Description
-	${answers.description}
+## Installation/Usage
+${answers.installation}
 
-	## Installation/Usage
-	${answers.install}
+## Contribution(s)
+${answers.contributions}
 
-	## Contribution(s)
-	${answers.contributions}
+## Contact:
+${answers.email}
+${answers.github}
 
-	## Contact:
-	${answers.email}
-	${answers.github}
-
-	## License
-	${answers.license}
+## License
+${answers.license}
 `;
 }
 }

@@ -54,8 +54,14 @@ function runQuestions() {
 	return inquirer.prompt(questions)
 	.then((answers) => {
 		const md = MarkDown.generateReadme(answers);
-		console.log(md);
-		return answers;
+		fs.writeFile('README.md', md, function(err){
+			if (err) {
+				console.log('Your file was not saved.', err);
+			}
+			else {
+				console.log('Your README file was saved!');
+			}
+		})
 	})
 	.catch((error) => {
 	console.log(error);
