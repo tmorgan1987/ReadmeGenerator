@@ -23,7 +23,7 @@ class MarkDown {
 	- [Install/Usage](#Installation)
 	- [Contributions](#Contributions)
 	- [Questions](#Questions)
-	-License(#License)
+	- [License](#License)
 
 	## Description
 	${answers.description}
