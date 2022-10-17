@@ -27,8 +27,11 @@ class MarkDown {
 ## Description
 ${answers.description}
 
-## Installation/Usage
+## Installation
 ${answers.installation}
+
+## Usage
+${answers.usage}
 
 ## Contribution(s)
 ${answers.contributions}
