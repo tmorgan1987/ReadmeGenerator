@@ -37,8 +37,8 @@ ${answers.usage}
 ${answers.contributions}
 
 ## Contact:
-${answers.email}
-${answers.github}
+e-mail : ${answers.email}
+github : ${answers.github}
 
 ## License
 ${answers.license}
